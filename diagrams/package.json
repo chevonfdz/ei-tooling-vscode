@@ -25,8 +25,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "postbuild": "copyfiles -f build/**/*.js build/**/*.css ../vscode-plugin/webview-ui/",
+    "build": "react-scripts build && npm run rename-files",
+    "rename-files": "rename build\\static\\js\\main.*.js main.js && rename build\\static\\css\\main.*.css main.css",
+    "postbuild": "copyfiles -f build/**/main.js build/**/main.css ../vscode-plugin/webview-ui/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
