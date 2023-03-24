@@ -1,5 +1,7 @@
 import React, { useCallback, useState } from 'react';
+import { vscode } from "./utilities/vscode";
 import styled from 'styled-components';
+import { VSCodeButton } from "@vscode/webview-ui-toolkit/react";
 //import './App.css';
 
 import { FileNode, root } from './data';
@@ -85,6 +87,16 @@ const File = (props: Props) => {
 }
 
 function App() {
+
+  function resourcesPanel() {
+    vscode.postMessage(
+      {
+        command: "resources",
+        text: "This is resources panel",
+      }
+    );
+  }
+
   return (
     <div style={{ marginLeft: 15 }}>
 
@@ -92,6 +104,7 @@ function App() {
         return (
           <BoxDiv>
             <File node={{ ...data }} />
+            <VSCodeButton onClick={resourcesPanel}>Resources</VSCodeButton>
           </BoxDiv>)
       }
       )}
