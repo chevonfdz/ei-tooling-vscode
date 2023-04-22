@@ -108,4 +108,5 @@ export class DraggingPanel {
       this._disposables
     );
   }
+  
 }
