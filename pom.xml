@@ -20,7 +20,7 @@
       <dependencies>
         <dependency>
           <groupId>org.synapsevscode</groupId>
-          <artifactId>language-server</artifactId>
+          <artifactId>language-server</artifactId> 
           <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>

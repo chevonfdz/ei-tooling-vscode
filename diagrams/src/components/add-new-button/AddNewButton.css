@@ -1,0 +1,10 @@
+.add-new-button {
+    margin-top: 250px;
+    margin-left: 150px;
+    font-size: xx-large;
+    border: 1px black solid;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    /* aspect-ratio: 1/1; */
+}
