@@ -182,6 +182,7 @@ export function ApiProperty (props: Props) {
                 placeholder="eg: /Name"
               />
               <Form.Label className="PublishSwagger">PublishSwagger</Form.Label>
+              {/* When a user clicks this textbox, the Resource Key Model appears.*/}
               <Form.Control
                 type="text"
                 value={publishSwagger}

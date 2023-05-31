@@ -94,13 +94,13 @@ export function RespondMediatorProperty(props: Props) {
   return (
     <>
       <Modal.Header>
-        <Modal.Title className="text-primary">Properties</Modal.Title>
+        <Modal.Title className="text-primary">Respond Mediator Properties</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <br />
         <Row className="mb-4">
           <Modal.Title className="text-secondary">
-            Respond Mediator Properties
+            Properties
           </Modal.Title>
           <Form>
             <Form.Group>

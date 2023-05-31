@@ -51,10 +51,10 @@ type Props = {
     textEdit?: TextEdit;
 }
 type State = {
-  selectedRSType: string
-  staReferenceKey: string
-  dynReferenceKey: string
-  description: string
+  selectedRSType: string;
+  staReferenceKey: string;
+  dynReferenceKey: string;
+  description: string;
 };
 
 export function SequenceMediatorProperty (props: Props) {
